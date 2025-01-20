@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px 140px;
+}
+/* header section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+}
+nav li {
+    list-style-type: none;
+}
+nav ul{
+    display: flex;
+    gap: 32px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+nav button{
+    padding: 10px 60.5px;
+    background-color: orange;
+    border-radius: 12px;
+    border: none;
+}
+nav button a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+} 
+.navmobile{
+    display: none;
+}
+hr{
+    display: none;
+}
+
+/* banner section */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.banner button{
+    border-radius: 12px;
+    border: none;
+    padding: 10px 47px;
+    background-color: black;
+}
+.banner button a{
+    color: white;
+    text-decoration: none;
+}
+.bannermobile{
+    display: none;
+}
+
+/* standard curriculum section */
+.curriculum{
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.curriculum .container{
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+}
+.container .card, .card1, .card2{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 19px;
+}
+.container .card1{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+.container .card2{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+.container a{
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    /* navber section */
+    .navpc{
+        display: none;
+    }
+    .navmobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navmobile{
+        /* margin: 12px 16px; */
+        padding: 12px 16px;
+    }
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+      }
+      
+      .menu-icon .bar {
+        background-color: #333;
+        height: 4px;
+        width: 100%;
+      }   
+      hr{
+        display: block;
+      } 
+
+      /* banner section */
+
+      .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .banner .container, img{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* standard curriculum section */
+    .curriculum{
+        padding-left: 16px;
+        padding-right: 16px;
+        background-image: url(../assets/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .curriculum .container{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        justify-content: space-between;
+    }
+    .arrow{
+        display: none;
+    }
+}
