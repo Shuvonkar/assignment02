@@ -7,6 +7,30 @@
 .part1{
     padding: 20px 140px;
 }
+
+/* marque design */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.marquee-text {
+    display: inline-block;
+    color: 	#FF4500;
+    font-weight: 1000;
+    font-size: 20px;
+    animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /* header section */
 nav{
     display: flex;
@@ -155,6 +179,7 @@ hr{
     background-color: white;
     border-radius: 16px;
     border: none;
+    padding-bottom: 20px;
 }
 .storiesmb{
     display: none;
